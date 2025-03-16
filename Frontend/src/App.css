@@ -33,7 +33,7 @@ main .right{
   font-size: 0.7rem;
   overflow: auto;
 }
-@media (max-width: 375px){
+@media (max-width: 450px){
   main{
     flex-direction: column;
     align-items: center;
