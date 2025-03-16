@@ -63,7 +63,7 @@ function App() {
           {isLoading ? (
             <div className="loading">
               <div className="spinner"></div>
-              <p>Loading...</p>
+              <p>Analyzing your code.....</p>
             </div>
           ) : (
             <Markdown rehypePlugins={[rehypeHighlight]}>{review}</Markdown>
