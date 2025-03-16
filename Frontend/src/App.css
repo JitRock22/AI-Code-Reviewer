@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+main .left,main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius:0.7rem;
+}
+main .left{
+  position: relative;
+  background-color:rgba(255, 255, 255, 0.432)
+}
+main .right{
+  background-color: aquamarine;
+  padding: 1.5rem;
+  font-size: 0.7rem;
+  overflow: auto;
+}
+main .left .enter{
+  position: absolute;
+  background-color: aqua;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 2rem;
+  font-weight: 800;
+  border-radius: 0.7rem;
+  cursor: pointer;
+}
+
+.left .editor,.editor pre,.editor pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color:#0000;
+}
