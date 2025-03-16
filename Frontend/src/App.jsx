@@ -3,6 +3,7 @@ import "prismjs/themes/prism-tomorrow.css"
 import prism from "prismjs"
 import Markdown from "react-markdown"
 import Editor from "react-simple-code-editor"
+import rehypeHighlight from "rehype-highlight"
 import axios from "axios"
 import './App.css'
 
@@ -15,7 +16,8 @@ function App() {
   })
   //this funcion helps to send reqst to the backend after clicking button
   async function reviewer() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    // const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://ai-code-reviewer-enq8.onrender.com/ai/get-review', { code })
     setReview(response.data);
   }
   return (
@@ -41,7 +43,7 @@ function App() {
           <div className="enter" onClick={reviewer}>Review</div>
         </div>
         <div className="right">
-          <Markdown>
+          <Markdown rehypePlugins={[rehypeHighlight]}>  
             {review}
           </Markdown>
         </div>
