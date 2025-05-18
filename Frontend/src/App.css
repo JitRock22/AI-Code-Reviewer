@@ -28,7 +28,7 @@ main .left{
   background-color:rgba(255, 255, 255, 0.432)
 }
 main .right{
-  background-color: aquamarine;
+  background-color: rgb(1, 15, 11);
   padding: 1.5rem;
   font-size: 0.7rem;
   overflow: auto;
