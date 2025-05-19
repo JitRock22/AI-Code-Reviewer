@@ -31,13 +31,11 @@ function Home() {
       >
         {/* Left Side Text */}
         <div style={{ flex: 1, minWidth: "300px" }}>
-          <h1 style={{ fontSize: "2.8rem", fontWeight: "bold" }}>
-            CodeSense: 1000x faster code reviews
-          </h1>
-          <p style={{ fontSize: "1.2rem", margin: "1rem 0" }}>
-            Your AI code reviewer that finds bugs, improves quality, and shares
-            knowledge. Instant, actionable feedback in GitHub, GitLab, or your IDE.
-          </p>
+          <h2 style={{ fontSize: "3rem"}} className=" px-4 font-extrabold">
+           CodeSense: 1000x faster code reviews
+          </h2>
+          <p style={{ fontSize: "1.2rem", margin: "1rem 0" }} className=" px-4">
+            Expert code reviews for performance, readability, and best practices. Built for developers who care about clean, reliable code. </p>
           <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
             <button
               style={{
@@ -68,7 +66,7 @@ function Home() {
           }}
         >
           <img
-            src={reviewImg} 
+            src={reviewImg}
             alt="AI Review Example"
             style={{
               maxWidth: "100%",
