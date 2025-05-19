@@ -1,4 +1,6 @@
-*{
+@import "tailwindcss";
+
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,7 +66,7 @@ main .left .enter{
   margin: 0;
   border-radius: 0.7rem;
   background-color:#000000da;
-}
+}*/
 
 .loading {
   display: flex;
@@ -96,4 +98,4 @@ main .left .enter{
   100% {
     transform: rotate(360deg);
   }
-}
+} 
